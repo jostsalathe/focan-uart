@@ -30,7 +30,7 @@ Each TX data frame consists of 20 bytes describing the whole configuration and s
 | 0x03 | 0x03 | drive mode | 0: pedal drive, 1: electric drive, 2: both (set with P10) |
 | *0x04* | *0xF0* | *unknown* |  |
 | 0x04 | 0x0C | gear | 0: off, 1: eco, 2: mid, 3: high |
-| 0x04 | 0x03 | gear again | mirrored for some reason ¯\\\_(ツ)\_/¯ |
+| 0x04 | 0x03 | gear again | repeated for some reason ¯\\\_(ツ)\_/¯ |
 | *0x05* | *0x80* | *unknown* |  |
 | 0x05 | 0x40 | kick start | 0: motor can start from still stand, 1: motor must turn before it can start (set with P09) |
 | 0x05 | 0x20 | light enable | 0: light off, 1: light on |
