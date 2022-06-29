@@ -1,0 +1,13 @@
+{
+  "name": "FocanGZ3-RX",
+  "apiVersion": "1.0.0",
+  "author": "Jost Salathé",
+  "version": "0.0.1",
+  "description": "Protocol analyzer for the Focan GZ-3 E-Scooter display RX pin (controller->display)",
+  "extensions": {
+    "FocanGZ3-RX": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "HighLevelAnalyzer.Hla"
+    }
+  }
+}
