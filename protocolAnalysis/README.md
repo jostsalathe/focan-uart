@@ -11,9 +11,7 @@ There is one HLA each for the UART signal between the display unit (*DU*) and th
 
 ## General protocol description
 
-The communication uses full duplex UART at `TODO` V logic level running at 9600 baud.
-
-The pinout can be acquired from the *DU*s [user manual](./doc/2022-06-29%20Focan%20GZ-3%20user%20manual.pdf).
+The communication works with full duplex UART at about 3.5 V logic level running at 9600 baud.
 
 As long as the *DU* is turned on, it will send a data frame to the *MCU* via the TX signal roughly every 0.1 seconds. The *MCU* will then reply to that via the RX signal.
 
@@ -21,7 +19,7 @@ As long as the *DU* is turned on, it will send a data frame to the *MCU* via the
 
 Each TX data frame consists of 20 bytes describing the whole configuration and state of the *DU*.
 
-| offset | mask | name | description |
+| **offset** | **mask** | **name** | **description** |
 | --- | --- | --- | --- |
 | 0x00 | 0xFF | device address (?) | seems to be always 1 in TX direction |
 | 0x01 | 0xFF | data frame length | always 20  (0x14) in TX direction |
