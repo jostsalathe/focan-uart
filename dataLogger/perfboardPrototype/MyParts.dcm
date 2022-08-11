@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DM01
+D fixed output buck converter
+$ENDCMP
+#
+$CMP Micro_SD_Card_SPI
+D Micro SD Card Socket with SPI interface
+K connector SD microsd spi
+F http://katalog.we-online.de/em/datasheet/693072010801.pdf
+$ENDCMP
+#
+#End Doc Library
