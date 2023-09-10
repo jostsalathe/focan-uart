@@ -87,10 +87,10 @@ Each RX data frame consists of 14 bytes describing the state of the *MCU*.
 The vehicle velocity `v[km/h]` can be calculated from the wheel speed `t[ms]` using the known wheel diameter `D[in]` like this:
 
 ```
-perimeter P[m] = 0.0254 m/in * D * PI
+circumference C[m] = 0.0254 m/in * D * PI
 
-v = 1000 ms/s * 3600 s/h * 0.001 km/m * P / t
-v = 3600 * P / t
+v = 1000 ms/s * 3600 s/h * 0.001 km/m * C / t
+v = 3600 * C / t
 v = 3600 * 0.0254 * D * PI / t
 v = 91.44 * PI * D / t
 ```
